@@ -1,0 +1,16 @@
+<h3>
+  Create a new item
+</h3>
+<form>
+  <fieldset>
+    <label>Description</label>
+    <input name="description"
+           [(ngModel)]="item.description"
+           type="text">
+  </fieldset>
+  <button (click)="save.next(item)"
+          type="submit">
+    <span class="icon-upload"></span>
+    <span>Save</span>
+  </button>
+</form>

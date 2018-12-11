@@ -1,0 +1,7 @@
+<h3>
+  8 - Reactive Forms samples
+</h3>
+<app-contacts-new [item]="item"
+                  (save)="onSave($event)"></app-contacts-new>
+<app-contacts-list [items]="items$ | async"
+                   (edit)="item=$event"></app-contacts-list>

@@ -1,0 +1,15 @@
+<h3>
+  b - Progressive Web applications
+</h3>
+<h4>Performant Products</h4>
+<section class="row">
+  <article *ngFor="let product of products$ | async"
+           class="card">
+    <p><strong>{{ product.title }}</strong></p>
+    <p>{{ product.description }} {{product.price}}€</p>
+  </article>
+</section>
+<h4>Fresh Items</h4>
+<pre>
+  {{ items$ | async | json }}
+</pre>

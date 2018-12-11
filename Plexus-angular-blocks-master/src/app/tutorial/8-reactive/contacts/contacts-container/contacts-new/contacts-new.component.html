@@ -1,0 +1,52 @@
+<form [formGroup]="form">
+  <fieldset>
+    <legend>New Contact</legend>
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <label for="name">Name</label>
+        <input type="text"
+               formControlName="name"
+               placeholder="Full Name" />
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <label for="birthDate">Birth Date</label>
+        <input type="text"
+               formControlName="birthDate" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <label for="phone">Phone number</label>
+        <input type="tel"
+               formControlName="phone" />
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <label for="email">Email</label>
+        <input type="email"
+               formControlName="email"
+               placeholder="Email address" />
+      </div>
+    </div>
+  </fieldset>
+  <button type="submit"
+          class="primary"
+          [disabled]="form.invalid"
+          (click)="onSaveClick()">
+    <span class="icon-upload"></span>
+    <span>Save</span>
+  </button>
+  <button type="button"
+          (click)="form.reset()">
+    <span>Clear</span>
+  </button>
+</form>
+
+<aside class="row">
+  <pre class="col-md-5">
+    {{ form.value | json }}
+  </pre>
+  <pre class="col-md-5">
+    {{ form.status | json }}
+    {{ form.touched | json }}
+  </pre>
+</aside>

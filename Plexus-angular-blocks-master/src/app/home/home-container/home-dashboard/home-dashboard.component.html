@@ -1,0 +1,13 @@
+<h2>
+  Angular Blocks Laboratory
+</h2>
+<section class="row">
+  <article *ngFor="let block of blocks"
+           class="card">
+    <p>
+      <a [routerLink]="[block.url]"
+         routerLinkActive="router-link-active">{{ block.title }}</a>
+    </p>
+    <p>{{ block.description }}</p>
+  </article>
+</section>

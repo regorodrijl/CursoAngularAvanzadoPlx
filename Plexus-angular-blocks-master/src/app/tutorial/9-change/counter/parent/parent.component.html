@@ -1,0 +1,37 @@
+<h4>
+  Parent -> Child
+</h4>
+<h5>Parent</h5>
+<div class="row">
+  <button (click)="onClick()">DOM Event Change</button>
+  <input type="radio"
+         name="changingMethod"
+         value="Ref"
+         checked
+         (click)="changingMethod=0"> Ref
+  <input type="radio"
+         name="changingMethod"
+         value="Val"
+         (click)="changingMethod=1"> Val
+  <input type="radio"
+         name="changingMethod"
+         value="Clone"
+         (click)="changingMethod=2"> Clone
+</div>
+<div class="row">
+  <span>
+    counter:
+    <pre> {{ counter }} </pre>
+  </span>
+  <span>
+    item:
+    <pre> {{ item | json }} </pre>
+  </span>
+</div>
+<h5>child item</h5>
+<app-child [item]="item"></app-child>
+<h5>child counter</h5>
+<app-child [counter]="counter"></app-child>
+<h5>child counter item</h5>
+<app-child [counter]="counter"
+           [item]="item"></app-child>

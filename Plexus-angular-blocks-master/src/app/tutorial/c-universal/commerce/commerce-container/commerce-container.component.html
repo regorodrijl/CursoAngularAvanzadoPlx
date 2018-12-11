@@ -1,0 +1,11 @@
+<h3>
+  c - Universal commerce
+</h3>
+<section class="row">
+  <article *ngFor="let product of products$ | async"
+           class="card">
+    <p><strong>{{ product.title }}</strong></p>
+    <p><i> {{ product.description }}</i></p>
+    <p>{{ product.stock }} units - {{product.price}}€</p>
+  </article>
+</section>

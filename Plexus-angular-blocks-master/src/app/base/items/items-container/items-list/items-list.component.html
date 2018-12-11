@@ -1,0 +1,14 @@
+<h3>
+  List of Items
+</h3>
+<ul *ngIf="items?.length;else emptyList">
+  <li *ngFor="let item of items">
+    <a [routerLink]="[item._id]"
+       routerLinkActive="router-link-active">
+      {{ item | json}}
+    </a>
+  </li>
+</ul>
+<ng-template #emptyList>
+  <i i18n="@@no_items">No items to show</i>
+</ng-template>
