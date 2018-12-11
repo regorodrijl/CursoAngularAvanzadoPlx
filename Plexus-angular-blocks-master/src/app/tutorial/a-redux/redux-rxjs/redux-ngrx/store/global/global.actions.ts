@@ -1,12 +1,18 @@
 import { Action } from '@ngrx/store';
 
 export enum GlobalActionTypes {
-  ShowMessage = '[Global] Show Message'
+  ShowMessage = '[Global] Show Message',
+  Limpiar = '[Limpiar] limpiando Redux acción'
 }
 
 export class ShowMessage implements Action {
   readonly type = GlobalActionTypes.ShowMessage;
-  constructor(public readonly payload: string) {}
+  constructor(public readonly payload: string) { }
 }
 
-export type GlobalActions = ShowMessage;
+export class Limpiar implements Action {
+  readonly type = GlobalActionTypes.Limpiar;
+  constructor() { }
+}
+
+export type GlobalActions = ShowMessage | Limpiar;
