@@ -10,9 +10,9 @@ export class ContactsContainerComponent implements OnInit {
   public item = {};
   public items$: Subject<any[]> = new Subject();
   private items = [];
-  constructor() {}
+  constructor() { }
 
-  public ngOnInit() {}
+  public ngOnInit() { }
 
   public onSave(newItem) {
     if (newItem._id === null) {
