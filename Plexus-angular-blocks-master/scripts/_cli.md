@@ -42,3 +42,5 @@ ng g m tutorial/c-universal/commerce --routing true
 ng g c tutorial/c-universal/commerce/commerce-container
 ng g m tutorial/d-i18n/stocks --routing=true
 ng g c tutorial/d-i18n/stocks/stocks-container
+ng g m tutorial/e-library/mathslab --routing=true
+ng g c tutorial/e-library/mathslab/mathslab-container

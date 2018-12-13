@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bloques Angular</title>
+  <meta name="description"
+        content="Un proyecto Angular para aprender Angular ;-)">
+  <meta name="keywords"
+        content="Angular Sample Tutorial Ejemplo">
+  <meta name="author"
+        content="Alberto Basalo">
+  <base href="/">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <link rel="icon"
+        type="image/x-icon"
+        href="favicon.ico">
+  <link rel="manifest"
+        href="manifest.json">
+  <meta name="theme-color"
+        content="#3273dc">
+  <style>
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px;
+    }
+
+    .loader {
+      display: flex;
+      height: 50vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner {
+      height: 10vh;
+      width: 10vh;
+      border: 5px solid #3273dc;
+      border-top-color: #f57c00;
+      border-radius: 100%;
+      animation: rotation 0.6s infinite linear 0.25s;
+      opacity: 0;
+    }
+
+    @keyframes rotation {
+      from {
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+
+      to {
+        opacity: 1;
+        transform: rotate(359deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <app-root>
+    <div class="loading">
+      <div>
+        <h1>Bloques Angular</h1>
+        <h2>...calentando</h2>
+        <h3>Espera por favor...</h3>
+      </div>
+      <div class="loader">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+
+</html>

@@ -24,8 +24,9 @@ export class ItemContainerComponent implements OnInit {
   }
 
   public onDelete(item) {
-    this.itemsApiService
-      .deleteById(item._id)
-      .subscribe(() => this.router.navigate(['../items']));
+    const subs$ = this.itemsApiService.deleteById(item._id).subscribe(() => {
+      subs$.unsubscribe();
+      this.router.navigate(['../items']);
+    });
   }
 }

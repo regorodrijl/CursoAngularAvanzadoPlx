@@ -1,34 +1,34 @@
 [
   {
-    "ref":"a1",
-    "title":"new-phone",
-    "category":"phone",
+    "ref": "a1",
+    "title": "new-phone",
+    "category": "phone",
     "description": "New Phone Plus",
     "price": 834,
-    "stock":7
+    "stock": 7
   },
   {
-    "ref":"b3",
-    "title":"lap-mega-top",
-    "category":"laptop",
+    "ref": "b3",
+    "title": "lap-mega-top",
+    "category": "laptop",
     "description": "Mega Laptop",
     "price": 1254,
-    "stock":3
+    "stock": 3
   },
   {
-    "ref":"c6",
-    "title":"circle-tv",
-    "category":"tv",
+    "ref": "c6",
+    "title": "circle-tv",
+    "category": "tv",
     "description": "Curved TV",
     "price": 746,
-    "stock":4
+    "stock": 4
   },
   {
-    "ref":"h9",
-    "title":"photo-picture",
-    "category":"camera",
+    "ref": "h9",
+    "title": "photo-picture",
+    "category": "camera",
     "description": "Picture perfect camera",
     "price": 692,
-    "stock":8
+    "stock": 8
   }
 ]

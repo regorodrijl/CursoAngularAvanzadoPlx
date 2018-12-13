@@ -21,7 +21,8 @@
           "/runtime*.js"
         ]
       }
-    }, {
+    },
+    {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
@@ -33,29 +34,29 @@
       }
     }
   ],
-  "dataGroups": [{
-    "name": "cache-first",
-    "urls":[
-      "http://127.0.0.1:8080/assets/blocks.json"
-    ],
-    "cacheConfig":{
-      "strategy":"performance",
-      "maxSize":10,
-      "maxAge":"1d"
+  "dataGroups": [
+    {
+      "name": "cache-first",
+      "urls": [
+        "http://127.0.0.1:8080/assets/blocks.json"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 10,
+        "maxAge": "1d"
+      }
+    },
+    {
+      "name": "api-first",
+      "urls": [
+        "https://api-base.herokuapp.com/api/pub/items/**"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
     }
-  }
-  ,{
-    "name": "api-first",
-    "urls":[
-      "https://api-base.herokuapp.com/api/pub/items/**"
-    ],
-    "cacheConfig":{
-      "strategy" : "freshness",
-      "maxSize": 100,
-      "maxAge" : "1h",
-      "timeout" : "5s"
-    }
-}
-
-]
+  ]
 }

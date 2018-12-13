@@ -40,6 +40,10 @@ const routes: Routes = [
   {
     path: 'd-i18n',
     loadChildren: './tutorial/d-i18n/stocks/stocks.module#StocksModule'
+  },
+  {
+    path: 'e-library',
+    loadChildren: './tutorial/e-library/mathslab/mathslab.module#MathslabModule'
   }
 ];
 

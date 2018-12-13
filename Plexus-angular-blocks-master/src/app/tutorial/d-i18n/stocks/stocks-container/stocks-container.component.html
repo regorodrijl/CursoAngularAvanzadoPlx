@@ -1,12 +1,14 @@
 <h3 i18n="@@title">
   d - International stocks
 </h3>
-<a href="http://webstocks.com"
+<a href="http://angular.io"
+   target="_blank"
    alt="Online page"
    i18n="subtitle"
    i18n-alt="@@alt-subtitle">The most accurate and valuable information</a>
 <article class="card">
   <p><strong>{{ company.code }}</strong></p>
   <p><i> {{ company.name }}</i></p>
-  <p>{{ company.date | date:'short' }} - ${{company.value | number}}</p>
+  <p>{{ company.date | date:'long' }}</p>
+  <p>${{ company.value | number }}<i> {{ company.recomendation }}</i></p>
 </article>

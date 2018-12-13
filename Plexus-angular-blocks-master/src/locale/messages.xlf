@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2"
+  xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="no_items" datatype="html">
+        <source>No items to show</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/base/items/items-container/items-list/items-list.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="title" datatype="html">
+        <source>
+  d - International stocks
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/tutorial/d-i18n/stocks/stocks-container/stocks-container.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="54547a92c2508824a570acdfe43acae0394754cc" datatype="html">
+        <source>The most accurate and valuable information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/tutorial/d-i18n/stocks/stocks-container/stocks-container.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">subtitle</note>
+      </trans-unit>
+      <trans-unit id="alt-subtitle" datatype="html">
+        <source>Online page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/tutorial/d-i18n/stocks/stocks-container/stocks-container.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

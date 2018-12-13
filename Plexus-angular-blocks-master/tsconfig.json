@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "math": [
+        "dist/math"
+      ],
+      "math/*": [
+        "dist/math/*"
+      ]
+    }
   }
 }

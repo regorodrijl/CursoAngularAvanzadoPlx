@@ -53,6 +53,34 @@
             "scripts": []
           },
           "configurations": {
+            "es": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.es.ts"
+                },
+                {
+                  "replace": "src/index.html",
+                  "with": "src/index.es.html"
+                }
+              ],
+              "optimization": false,
+              "outputHashing": "all",
+              "sourceMap": true,
+              "extractCss": true,
+              "namedChunks": true,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "serviceWorker": false,
+              "outputPath": "dist/angular-blocks-es/",
+              "baseHref": "/dist/angular-blocks-es/",
+              "i18nFile": "src/locale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es",
+              "i18nMissingTranslation": "error"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -86,6 +114,9 @@
             "browserTarget": "angular-blocks:build"
           },
           "configurations": {
+            "es": {
+              "browserTarget": "angular-blocks:build:es"
+            },
             "production": {
               "browserTarget": "angular-blocks:build:production"
             }
@@ -126,6 +157,24 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "src/tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
         }
       }
     },
@@ -150,6 +199,41 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "math": {
+      "root": "projects/math",
+      "sourceRoot": "projects/math/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/math/tsconfig.lib.json",
+            "project": "projects/math/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/math/src/test.ts",
+            "tsConfig": "projects/math/tsconfig.spec.json",
+            "karmaConfig": "projects/math/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/math/tsconfig.lib.json",
+              "projects/math/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]

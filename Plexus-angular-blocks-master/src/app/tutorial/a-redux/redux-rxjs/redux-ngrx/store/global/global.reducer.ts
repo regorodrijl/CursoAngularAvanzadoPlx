@@ -10,9 +10,6 @@ export function globalReducer(
     case GlobalActionTypes.ShowMessage:
       result.message = action.payload;
       break;
-    case GlobalActionTypes.Limpiar:
-      result.message = "";
-      break;
     default:
       break;
   }

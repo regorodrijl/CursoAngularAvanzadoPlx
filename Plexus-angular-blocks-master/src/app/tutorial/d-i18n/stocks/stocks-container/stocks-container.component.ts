@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-stocks-container',
@@ -10,9 +11,16 @@ export class StocksContainerComponent implements OnInit {
     code: 'GOGL',
     name: 'Google',
     date: Date.now(),
-    value: 2345.897
+    value: 2345.897,
+    recomendation: 'buy'
   };
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.company.recomendation === 'buy') {
+      this.company.recomendation = environment.buy;
+    } else {
+      this.company.recomendation = environment.sell;
+    }
+  }
 }

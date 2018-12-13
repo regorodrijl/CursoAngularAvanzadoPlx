@@ -1,37 +1,42 @@
 [
   {
-    "url":"items",
-    "title":"base",
+    "url": "items",
+    "title": "base",
     "description": "Basic Items CRUD"
   },
   {
-    "url":"8-reactive",
-    "title":"8-reactive",
+    "url": "8-reactive",
+    "title": "8-reactive",
     "description": "Contact manager with Reactive Forms"
   },
   {
-    "url":"9-change",
-    "title":"9-Change",
+    "url": "9-change",
+    "title": "9-Change",
     "description": "Counters with change detection"
   },
   {
-    "url":"a-redux",
-    "title":"A-Redux",
+    "url": "a-redux",
+    "title": "A-Redux",
     "description": "Redux with RxJS and NgRx"
   },
   {
-    "url":"b-pwa",
-    "title":"B-PWA",
+    "url": "b-pwa",
+    "title": "B-PWA",
     "description": "Local data with Progressive Web Applications"
   },
   {
-    "url":"c-universal",
-    "title":"C-UNIVERSAL",
+    "url": "c-universal",
+    "title": "C-UNIVERSAL",
     "description": "Universal SEO e-commerce"
   },
   {
-    "url":"d-i18n",
-    "title":"D-I18N",
+    "url": "d-i18n",
+    "title": "D-I18N",
     "description": "Stocks international"
+  },
+  {
+    "url": "e-library",
+    "title": "E_LIBRARY",
+    "description": "Math Library"
   }
 ]
