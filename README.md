@@ -8,3 +8,4 @@ Temario:
  - pwa
  - universal
  - i18n 
+ - WebComponent
